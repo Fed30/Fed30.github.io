@@ -1,0 +1,180 @@
+<!DOCTYPE html><!--<!DOCTYPE> declaration is an "information" to the browser about what document type to expect.-->
+<html lang="en"><!--lang attribute inside the <html> tag used to declare the language of the Web page. This assist search engines and browsers-->
+
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="myScript.js" type= "text/javascript"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--add icon library-->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia"><!--add google font library-->
+		<meta charset="utf-8"> <!--Unicode mitigates a lot of issues with special characters, so it’s standard practice to encode pages in UTF-8  and to save HTML files with the same encoding -->
+		<title> Home </title>
+		
+	</head> 
+	
+	<body>
+		<header class="header">
+		
+		<!--The <img> tag is used to embed an image in an HTML page. The src attribute specifies the path to the image to be displayed-->
+		<!-- Here, the URL does not include the domain name.Links to an image that is hosted within the website.-->
+		<div class="clearfix">
+		<div class="logo"><a href="index.html"><img id="logo" src="photo1.jpg" alt="logo" title="Home"></a></div>
+		<h1 id="title">Buddy Care Centre</h1>
+		</div>
+		</header>
+		
+		<nav class="topnav"><!--The <nav> tag defines a set of navigation links-->
+			<b>	<!--The <a> tag defines a hyperlink. The href attribute specifies the URL of the page the link goes to-->
+				<a href="index.html" title="Home">Home</a>&nbsp; &nbsp;
+				<a href="about.html" title="About us">About us</a>&nbsp; &nbsp;
+				<a href="lessons.html" title="Lessons">Lessons</a>&nbsp; &nbsp;
+				<a href="quizzes.html" title="Quizzes">Quizzes</a>&nbsp; &nbsp;
+				<a href="resources.html" title="Resources">Resources</a>&nbsp; &nbsp;
+				<a href="contact.html" title="Contact us">Contact us</a>&nbsp; &nbsp;
+			</b>
+		
+		</nav>
+		
+		<main>
+		<div class="row">
+		<div class="leftcolumn">
+		<div class="card">
+		<h2 class="h2"><em>"We strive to accommodate your dogs whatever his or her needs"</em></h2>
+			<img id="para" src="home_photo.jpg" alt="dogo">
+			
+			<div class="row_home">
+				<div class="column_home">
+					
+						<h4 class="home_h4">Dog Boarding</h4>
+					<p>
+						We are a high quality kennels that provides a caring, 
+						low stress environment for dogs & pets.
+						Our experienced staff will make your pet’s country resort holiday an enjoyable one.
+					</p>
+					<button class="button1" onclick="document.location='contact.html'">BOOK</button>
+				</div>
+				<div class="column_home">
+					
+						<h4 class="home_h4">Pet Disabilities</h4>
+					<p>
+						We aim to accommodate your pet whatever his or her needs.
+						Pet with disabilities are welcome. Written instructions needed.
+						Please call to arrange the best service we can offer.
+					</p>
+					<button class="button2" onclick="document.location='contact.html'">BOOK</button>
+				</div>
+				<div class="column_home">
+					
+						<h4 class="home_h4">Pet taxi</h4>
+					<p>
+						If you don't have time to drop off your pet, don't panic;
+						we will happily collect your pet in our air-conditioned vehicle. 
+						Please call us to request this.
+					</p>
+					<button class="button3" onclick="document.location='contact.html'">BOOK</button>
+				</div>
+			</div>
+		</div>
+		
+		</div>
+		
+		
+		<div class="rightcolumn">
+			<div class="card">
+				
+					<div class="whoweare">
+					<h3 class="h4">Who we are?</h3>
+					We are a high quality kennels that provides a caring, low stress environment for dogs & pets of most kinds. 
+					The last thing you want to worry about whilst on holiday or away from home is the welfare of your beloved pets.
+					We welcome all pets as part of our family and we endeavour to make their stay as comfortable as possible. 
+					</div>
+			</div>
+		
+			<div class="card">
+				
+					<div class="whoweare">
+					<div class="review">
+					<h3 class="h4">What people say..</h3>
+						<div class="stay_review"><img id="honey" src="dog1.jpg" alt="J.Jackson review"></div>
+						<p>
+						<em>Jane Jackson:</em><br> Thank you so much for taking care of Honey for the past week.
+						We are so pleased we will use you again and we won't hesitate on recomending you..once again THANK YOU!!
+						</p>
+						</div>
+					
+					</div>
+			</div>
+		
+		<div class="card">
+			<div class="whoweare">
+			<h3 class="h4">Follow Us</h3>
+				<a href="#" class="fa fa-facebook"></a>
+				<a href="#" class="fa fa-instagram"></a>
+				<a href="#" class="fa fa-twitter"></a>
+			</div>
+		</div>
+		</div>
+		
+		</div>
+		</main>
+		<footer>
+		<div class="footer">
+		<div class="booking">
+		<p class="form"> 
+		<a class="booking_link" href="booking_form.pdf" type="application/pdf" target="_blank" title="Booking form"><b>Click here to download our booking form</b></a>
+		</p>
+		
+		</div>
+		<div class="row_footer">
+				<div class="column_footer">
+					
+						<h4 class="footer_h4">Address</h4>
+						<p class="p_footer">
+							5 Basin Approach,<br>
+							  7 The Helm,<br>
+								E16 2TX,<br>
+								London<br>
+						
+						</p>
+				</div>
+				<div class="column_footer">
+					
+						<h4 class="footer_h4">Opening Times</h4>
+						<p class="p_footer">
+							Monday-Friday<br>
+								10am-3pm<br>
+						Saturday-Sunday (including bank holidays)<br>
+								10am-12pm<br>
+						
+						</p>
+				</div>
+				<div class="column_footer">
+					
+						<h4 class="footer_h4">Contact Us</h4>
+						<p class="p_footer">
+							 Telephone:<br>
+							01322551440<br>
+							Email:<br>
+							214774@student.uwl.ac.uk
+						
+						</p>
+				</div>
+			</div>
+		<p>
+		<a id="validation" href="http://jigsaw.w3.org/css-validator/check/referer">
+		<img style="border:0;width:88px;height:31px"
+        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+        alt="Valid CSS!" />
+		</a><br><br>
+		<!--The <small> tag defines smaller text-->
+		<small id="copyright"> &copy;Copyright 2022 University of West London. All rights reserved. </small>
+		</p>
+		
+		</div>
+		
+		</footer>
+		
+</body>
+
+
+
+</html>

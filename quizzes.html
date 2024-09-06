@@ -1,0 +1,182 @@
+<!DOCTYPE HTML><!--<!DOCTYPE> declaration is an "information" to the browser about what document type to expect.-->
+<html lang="en"><!--lang attribute inside the <html> tag used to declare the language of the Web page. This assist search engines and browsers-->
+
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="myScript.js" type= "text/javascript"></script>
+		<meta charset="UTF-8" ><!--Unicode mitigates a lot of issues with special characters, so it’s standard practice to encode pages in UTF-8  and to save HTML files with the same encoding -->
+		<title>Quizzes</title>
+		
+		
+	</head> 
+	
+	<body id="body_quizz">
+	
+		<header class="header">
+	
+		
+		<!--The <img> tag is used to embed an image in an HTML page. The src attribute specifies the path to the image to be displayed-->
+		<!-- Here, the URL does not include the domain name.Links to an image that is hosted within the website.-->
+		<div class="clearfix">
+		<div class="logo"><a href="index.html"><img id="logo" src="photo1.jpg" alt="logo" title="Home"></a></div>
+		<h1 id="title">Quizz time! </h1><!--This is heading 1-->
+		</div>
+		</header>
+		<main>
+		<nav class="topnav"><!--The <nav> tag defines a set of navigation links-->
+			<b>	<!--The <a> tag defines a hyperlink. The href attribute specifies the URL of the page the link goes to-->
+				<a href="index.html" title="Home">Home</a>&nbsp; &nbsp;
+				<a href="about.html" title="About us">About us</a>&nbsp; &nbsp;
+				<a href="lessons.html" title="Lessons">Lessons</a>&nbsp; &nbsp;
+				<a href="resources.html" title="Resources">Resources</a>&nbsp; &nbsp;
+				<a href="contact.html" title="Contact us">Contact us</a>&nbsp; &nbsp;
+			</b>
+		
+		</nav>
+		
+		
+		<div class="row_quizz">
+		<div class="column_quizz">
+			<div class="aboutus_quizz">
+			<h3 class="h2"><em>Quiz 1 &#128512; </em></h3>
+			<form class="quizz" name="quizz1" action=submition.html onsubmit=" return Submit_quizz1()" method="post">
+			<p>1.1 Where to find information about the website?</p>
+			<!--The <input> tag specifies an input field where the user can enter data.-->
+			<!--Radio buttons let a user select only one of a limited number of choices.-->
+			
+  			<input type="radio" id="aboutus" name="web_info" value="about">About us<br>
+  			<input type="radio" id="homepage" name="web_info" value="home">Home<br>
+  			<input type="radio" id="contactpage" name="web_info" value="contact">Contact Us
+			
+			<p>1.2 What do you do if your pet is shy?</p>
+
+			
+  			<input type="radio" id="shypet" name="shy" value="shy">Bring him/her over to meet us<br>
+  			<input type="radio" id="notthing" name="shy" value="doing-nothing">Do nothing<br>
+  			<input type="radio" id="love" name="shy" value="cuddles">Lots of cuddles
+			
+			<p>1.3 What IVDD means?</p>
+
+			
+  			<input type="radio" id="disease" name="ivdd" value="ivdd">Intervertebral disk disease<br>
+  			<input type="radio" id="tumor" name="ivdd" value="cerv_disease">Cervical disease<br>
+  			<input type="radio" id="fav_object" name="ivdd" value="toy">Dog toy<br><br>
+			<input class="submit" type="submit" value="Submit">
+			<input class="reset" type="reset" value="Reset" onclick="return confirmReset()">
+			</form>
+			</div>
+		</div>
+		<div class="column_quizz">
+			<div class="aboutus_quizz">
+			<h3 class="h2"><em>Quiz 2 &#128525; </em></h3>
+			<form class="quizz" name="quizz2" action=submition.html onsubmit=" return Submit_quizz2()" method="post">
+			<p>2.1 Do we welcome all dog?</p>
+			
+  			<input type="radio" id="posi" name="all_dog" value="yes">Yes<br>
+  			<input type="radio" id="nega" name="all_dog" value="no">No<br>
+  			<input type="radio" id="none" name="all_dog" value="no_dogs">No dogs allowed
+	
+			<p>2.2 What do we do in an emergency?</p>
+
+  			<input type="radio" id="vet_contact" name="emergency" value="vet">Contact your trusted Vet<br>
+  			<input type="radio" id="emergencynum" name="emergency" value="111">Call 111<br>
+  			<input type="radio" id="wait" name="emergency" value="sit">Sit and wait
+
+			<p>2.3 IVDD can cause damage to:</p>
+
+  			<input type="radio" id="head" name="ivdd_cause" value="Brain">Brain<br>
+  			<input type="radio" id="sc" name="ivdd_cause" value="spinal cord">Spinal cord<br>
+  			<input type="radio" id="bladder" name="ivdd_cause" value="Bladder">Bladder<br><br>
+			<input class="submit" type="submit" value="Submit">
+			<input class="reset" type="reset" value="Reset" onclick="return confirmReset()"><br>  
+			</form>
+			</div>
+		</div>
+		<div class="column_quizz">
+			<div class="aboutus_quizz">
+			<h3 class="h2"><em>Quiz 3 &#128513; </em></h3>
+			<form class="quizz" name="quizz3" action=submition.html onsubmit=" return Submit_quizz3()" method="post">
+			<p>3.1 Do we accomodate pet with IVDD?</p>
+
+  			<input type="radio" id="positive" name="accomodation" value="yes">Yes<br>
+  			<input type="radio" id="negative" name="accomodation" value="no">No<br>
+  			<input type="radio" id="neither" name="accomodation" value="never">Never
+		
+			<p>3.2 What is a sign of IVDD in dogs?</p>
+
+  			<input type="radio" id="neck" name="ivdd_sign" value="neck_pain">Neck pain<br>
+  			<input type="radio" id="ear" name="ivdd_sign" value="ear_pain">Ear pain<br>
+  			<input type="radio" id="run" name="ivdd_sign" value="running">Running 
+			
+			<p>3.3 Does a dog affected from IVDD fully recover?</p>
+
+  			<input type="radio" id="negav" name="ivdd_recovery" value="no">No<br>
+  			<input type="radio" id="posit" name="ivdd_recovery" value="yes">Yes<br>
+  			<input type="radio" id="possibility" name="ivdd_recovery" value="maybe">Maybe<br><br>
+			<input class="submit" type="submit" value="Submit">
+            <input class="reset" type="reset" value="Reset" onclick=" return confirmReset()"><br>  
+			</form>
+			</div>
+		</div>
+		</div>
+		</main>
+		<footer>
+		
+		<div class="footer">
+		<div class="booking">
+		<p class="form"> <a class="booking_link" href="booking_form.pdf" type="application/pdf" target="_blank" title="Booking form"><b>Click here to download our booking form</b></a>
+		</p>
+		</div>
+		<div class="row_footer">
+				<div class="column_footer">
+					
+						<h4 class="footer_h4">Address</h4>
+						<p class="p_footer">
+							5 Basin Approach,<br>
+							  7 The Helm,<br>
+								E16 2TX,<br>
+								London<br>
+						
+						</p>
+				</div>
+				<div class="column_footer">
+					
+						<h4 class="footer_h4">Opening Times</h4>
+						<p class="p_footer">
+							Monday-Friday<br>
+								10am-3pm<br>
+						Saturday-Sunday (including bank holidays)<br>
+								10am-12pm<br>
+						
+						</p>
+				</div>
+				<div class="column_footer">
+					
+						<h4 class="footer_h4">Contact Us</h4>
+						<p class="p_footer">
+							 Telephone:<br>
+							01322551440<br>
+							Email:<br>
+							214774@student.uwl.ac.uk
+						
+						</p>
+				</div>
+			</div>
+		<p>
+		<a id="validation" href="http://jigsaw.w3.org/css-validator/check/referer">
+		<img style="border:0;width:88px;height:31px"
+        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+        alt="Valid CSS!" />
+		</a><br><br>
+		<!--The <small> tag defines smaller text-->
+		<small id="copyright"> &copy;Copyright 2022 University of West London. All rights reserved. </small>
+		</p>
+		
+		</div>
+		</footer>
+	</body> 
+
+
+
+
+</html>
